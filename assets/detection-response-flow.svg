@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="832" viewBox="0 0 1840 832" role="img">
+<title>Detection and response flow</title><desc>Suricata and endpoint logs feed Wazuh, which stores alert records and branches to Gemini analyst-assist analysis and Shuffle/TheHive case workflows</desc>
+<defs><marker id="arrow" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#466c83"/></marker>
+<marker id="tealarrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 5 L0 10 Z" fill="#0c9a96"/></marker></defs>
+<rect width="1840" height="832" fill="#f7fafd"/>
+<rect x="0" y="0" width="1840" height="122" rx="0" fill="#081d30" stroke="#081d30" stroke-width="0"/>
+<text x="60" y="65" font-size="38" font-weight="760" fill="#ffffff" font-family="Inter, Arial, sans-serif" text-anchor="start">From raw events to an investigation</text>
+<text x="60" y="101" font-size="18" font-weight="500" fill="#b1c6d5" font-family="Inter, Arial, sans-serif" text-anchor="start">Two downstream paths: AI-assisted triage and Shuffle/TheHive case handling.</text>
+<rect x="53" y="157" width="1734" height="274" rx="25" fill="#edf4fa" stroke="#d5e1ed" stroke-width="2"/>
+<text x="83" y="198" font-size="20" font-weight="750" fill="#376f8e" font-family="Inter, Arial, sans-serif" text-anchor="start">01   SECURITY SIGNALS  →  WAZUH</text>
+<rect x="90" y="228" width="707" height="158" rx="18" fill="#ffffff" stroke="#c9d8e6" stroke-width="2"/>
+<text x="122" y="274" font-size="23" font-weight="750" fill="#17364f" font-family="Inter, Arial, sans-serif" text-anchor="start">NETWORK + ENDPOINT SOURCES</text>
+<polyline points="444,294 444,368" fill="none" stroke="#d9e5ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="123" cy="316" r="8" fill="#108f81"/>
+<text x="144" y="324" font-size="21" font-weight="700" fill="#1b5e57" font-family="Inter, Arial, sans-serif" text-anchor="start">Suricata IDS</text>
+<text x="144" y="356" font-size="17" font-weight="500" fill="#50766e" font-family="Inter, Arial, sans-serif" text-anchor="start">DMZ • via Wazuh agent</text>
+<circle cx="470" cy="316" r="8" fill="#9471bf"/>
+<text x="492" y="324" font-size="21" font-weight="700" fill="#644d8d" font-family="Inter, Arial, sans-serif" text-anchor="start">Windows + Linux</text>
+<text x="492" y="356" font-size="17" font-weight="500" fill="#806b93" font-family="Inter, Arial, sans-serif" text-anchor="start">AD audit • FIM • SCA</text>
+<rect x="825" y="228" width="405" height="158" rx="18" fill="#ffffff" stroke="#c9d8e6" stroke-width="2"/>
+<circle cx="855" cy="267" r="9" fill="#2b83b9"/>
+<text x="879" y="275" font-size="23" font-weight="750" fill="#17364f" font-family="Inter, Arial, sans-serif" text-anchor="start">WAZUH MANAGER</text>
+<text x="855" y="322" font-size="18" font-weight="500" fill="#506b80" font-family="Inter, Arial, sans-serif" text-anchor="start">Custom rules + correlation</text>
+<text x="855" y="352" font-size="17" font-weight="500" fill="#5f7889" font-family="Inter, Arial, sans-serif" text-anchor="start">MITRE ATT&amp;CK tags</text>
+<rect x="1285" y="228" width="440" height="158" rx="18" fill="#ffffff" stroke="#c9d8e6" stroke-width="2"/>
+<circle cx="1315" cy="267" r="9" fill="#2b83b9"/>
+<text x="1339" y="275" font-size="23" font-weight="750" fill="#17364f" font-family="Inter, Arial, sans-serif" text-anchor="start">INDEXER + DASHBOARD</text>
+<text x="1315" y="322" font-size="18" font-weight="500" fill="#506b80" font-family="Inter, Arial, sans-serif" text-anchor="start">Searchable alert records</text>
+<text x="1315" y="352" font-size="17" font-weight="500" fill="#5f7889" font-family="Inter, Arial, sans-serif" text-anchor="start">Analyst investigation</text>
+<polyline points="797,305 814,305" fill="none" stroke="#0f9b92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tealarrow)"/>
+<polyline points="1230,305 1273,305" fill="none" stroke="#406f92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="53" y="471" width="825" height="276" rx="25" fill="#ebf9f4" stroke="#cae9e0" stroke-width="2"/>
+<text x="84" y="518" font-size="22" font-weight="760" fill="#0b8172" font-family="Inter, Arial, sans-serif" text-anchor="start">02   AI-ASSISTED TRIAGE</text>
+<rect x="88" y="551" width="330" height="135" rx="17" fill="#ffffff" stroke="#c3e4d7" stroke-width="2"/>
+<text x="118" y="594" font-size="24" font-weight="750" fill="#185747" font-family="Inter, Arial, sans-serif" text-anchor="start">Alert level ≥ 12</text>
+<text x="118" y="630" font-size="18" font-weight="500" fill="#537568" font-family="Inter, Arial, sans-serif" text-anchor="start">Selected log fields</text>
+<text x="118" y="658" font-size="16" font-weight="500" fill="#647f73" font-family="Inter, Arial, sans-serif" text-anchor="start">rule, context, MITRE</text>
+<rect x="480" y="551" width="360" height="135" rx="17" fill="#ffffff" stroke="#c3e4d7" stroke-width="2"/>
+<text x="508" y="594" font-size="24" font-weight="750" fill="#185747" font-family="Inter, Arial, sans-serif" text-anchor="start">Google Gemini</text>
+<text x="508" y="630" font-size="18" font-weight="500" fill="#537568" font-family="Inter, Arial, sans-serif" text-anchor="start">Analysis as data.ai_analysis</text>
+<text x="508" y="658" font-size="16" font-weight="500" fill="#647f73" font-family="Inter, Arial, sans-serif" text-anchor="start">Requires analyst verification</text>
+<polyline points="418,616 470,616" fill="none" stroke="#0c9a96" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tealarrow)"/>
+<rect x="918" y="471" width="869" height="276" rx="25" fill="#fff6ec" stroke="#efdfc1" stroke-width="2"/>
+<text x="947" y="518" font-size="22" font-weight="760" fill="#b57626" font-family="Inter, Arial, sans-serif" text-anchor="start">03   ORCHESTRATION + CASE HANDLING</text>
+<rect x="952" y="551" width="360" height="135" rx="17" fill="#ffffff" stroke="#efdfc1" stroke-width="2"/>
+<text x="978" y="595" font-size="24" font-weight="750" fill="#79571c" font-family="Inter, Arial, sans-serif" text-anchor="start">Shuffle SOAR</text>
+<text x="978" y="629" font-size="18" font-weight="500" fill="#8a7150" font-family="Inter, Arial, sans-serif" text-anchor="start">Webhook, validation, enrichment</text>
+<text x="978" y="658" font-size="17" font-weight="500" fill="#927a58" font-family="Inter, Arial, sans-serif" text-anchor="start">Workflow execution</text>
+<rect x="1366" y="551" width="380" height="135" rx="17" fill="#ffffff" stroke="#efdfc1" stroke-width="2"/>
+<text x="1394" y="595" font-size="24" font-weight="750" fill="#79571c" font-family="Inter, Arial, sans-serif" text-anchor="start">TheHive</text>
+<text x="1394" y="629" font-size="18" font-weight="500" fill="#8a7150" font-family="Inter, Arial, sans-serif" text-anchor="start">Case creation and tracking</text>
+<text x="1394" y="658" font-size="17" font-weight="500" fill="#927a58" font-family="Inter, Arial, sans-serif" text-anchor="start">Analyst review</text>
+<polyline points="1312,616 1356,616" fill="none" stroke="#c29252" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="1030,431 1030,449 440,449 440,541 238,541 238,545" fill="none" stroke="#0c9a96" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tealarrow)"/>
+<polyline points="1060,431 1060,447 900,447 900,541 1130,541 1130,545" fill="none" stroke="#bd9252" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="83" y="784" font-size="17" font-weight="500" fill="#667f93" font-family="Inter, Arial, sans-serif" text-anchor="start">AI output is contextual assistance; firewall blocking is discussed in the report but not independently proven by the supplied execution evidence.</text>
+</svg>

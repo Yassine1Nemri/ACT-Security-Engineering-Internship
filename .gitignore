@@ -1,0 +1,17 @@
+# Secret/config outputs: never commit raw credentials or employer exports
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*
+*token*
+*.pcap
+*.pcapng
+secrets/
+raw-evidence/
+raw-exports/
+original-report/
+.DS_Store
+__pycache__/
