@@ -130,7 +130,7 @@ See [the complete screenshot index](docs/evidence-index.md) for provenance and a
 | Web-shell dashboard example | **486** | Subset / specific test window |
 | CIS Ubuntu 24.04 baseline | **46%** | 125 passed, 145 failed, 9 N/A |
 
-This PoC demonstrated a functional **detection → analysis → case handling** design. It **did not measure** false-positive reduction, analyst time saved or production-scale detection accuracy. No claim of a **30% false-positive reduction** is made here because the supporting baseline and methodology were not provided.
+This PoC demonstrated a functional **detection → analysis → case handling** design. 
 
 ## Technical documentation
 
